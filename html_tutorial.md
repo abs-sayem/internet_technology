@@ -2,7 +2,7 @@
 
 ---
 
-### Day 1: What is HTML & Basic Page Structure
+## 01: HTML & Basic Page Structure
 
 #### Theory:
 
@@ -51,7 +51,7 @@
 
 ---
 
-### Day 2: Text Formatting Tags
+## 02: Text Formatting
 
 #### Theory:
 
@@ -90,7 +90,7 @@
 
 ---
 
-### Day 3: Links and Images
+## 03: Links and Images
 
 #### Theory:
 
@@ -129,7 +129,7 @@
 
 ---
 
-### Day 4: Lists
+## 04: Lists
 
 #### Theory:
 
@@ -182,7 +182,7 @@
 
 ---
 
-### Day 5: Tables
+## 05: Tables
 
 #### Theory:
 
@@ -230,7 +230,7 @@
 
 ---
 
-### Day 6: Forms
+## 06: Forms
 
 #### Theory:
 
@@ -278,7 +278,7 @@
 
 ---
 
-### Day 7: Semantic HTML
+## 07: Semantic HTML
 
 #### Theory:
 
@@ -326,7 +326,7 @@
 </article>
 ```
 
-#### Practice:
+### Practice:
 
 * Redesign a basic webpage using semantic tags for clarity and SEO.
 
