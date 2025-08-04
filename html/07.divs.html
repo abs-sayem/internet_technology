@@ -6,6 +6,7 @@
         <style>body {font-family: 'Trebuchet MS';}</style>
     </head>
     <body>
+    <!-- Navigation Bar -->
         <nav style="display: flex;">
             <a href="01.index.html" style="margin-right: 16px;">Home</a>
             <a href="02.text_format.html" style="margin-right: 16px;">Text Format</a>
@@ -16,44 +17,96 @@
             <a href="07.divs.html" style="margin-right: 16px; color: black;">Divs</a>
             <a href="https://github.com/abs-sayem/internet_technology/blob/main/html_tutorial.md" target="_blank" style="margin-left: auto; color: blue;">HTML Tutorial Page</a>
         </nav>
+
+    <!-- Header -->
         <header style="text-align: center;">
             <h1>Divs in HTML</h1>
         </header>
         <hr>
 
-        <!-- Divs in HTML -->
-        <div style="border: 2px solid rgb(68, 68, 68);">
-            <p>This is inside a div.</p>
+    <!-- Divs in HTML -->
+        <div style="border: 2px solid rgb(219, 218, 218);">
+            <p>single div single element</p>
         </div>
         <br>
-        <!-- Divs with Multiple Elements -->
-        <div style="border: 2px solid rgb(59, 59, 59);">
-            <h2>Div with Multiple Elements</h2>
-            <p>This div contains a heading and this paragraph.</p>
+        
+    <!-- Divs with Multiple Elements -->
+        <div style="border: 2px solid rgb(207, 207, 207);">
+            <h2 style="text-align: center;">Single Div Multiple Elements</h2>
+            <p style="text-align: center;">This div contains a heading and this paragraph.</p>
         </div>
         <br>
-        <!-- Nested Divs -->
-        <div style="border: 2px solid rgb(44, 44, 44); padding: 10px;">
-            <h2>Outer Div</h2>
-            <div style="border: 2px solid rgb(48, 47, 47);">
+        
+    <!-- Nested Divs -->
+        <div style="border: 2px solid rgb(184, 183, 183); padding: 10px;">
+            <h2 style="text-align: center;">Outer Div</h2>
+            <div style="border: 2px solid rgb(226, 226, 226);">
                 <h3 style="margin-left: 10px;">Nested Div</h3>
-                <p style="margin-left: 10px;">This is a nested div inside another div.</p>
+                <p style="margin-left: 10px;">This is a nested div inside the outer div. The outer div contains only one element - one h2 heading. The inner aka. nested div contains one h3 heading and one paragraph.</p>
             </div>
         </div>
         <br>
-        <!-- Styling in Divs -->
-         <style>
-            .style-div {
-                background-color: silver;
-                padding: 10px;
-                border: 2px solid rgb(41, 41, 41);
-            }
-         </style>
-        <div class="style-div">
-            <h2 style="text-align: center;">Styled Div</h2>
-            <p>This box is styled using seperate style class.</p>
-        </div>
+        
+    <!-- Styling in Divs -->
+        <h2>Styling in Divs (Class / Id / Inline)</h2>
+        <div style="background-color:rgb(250, 242, 242); padding: 10px; border: 2px solid rgb(255, 216, 216);">
+            <style>
+                .class-style {
+                    background-color: rgb(252, 241, 241);
+                    padding: 10px;
+                    border: 2px solid rgb(252, 101, 101);
+                }
+            </style>
+            <div class="class-style">
+                <h3 style="margin-left: 10px;">Class-Styled Div</h3>
+                <p style="margin-left: 20px;">This box is styled using seperate style class. Till now we are using inline style sheet but this time we use a style class to decorate the div. The class style is useful when we want a unified style for the entire div. If we want to style any element inside the div seperately, the inline style still there.</p>
+                <p style="margin-left: 20px;">Now one may ask - if the class and inline style conflicts with each other then what will happen? The answer is simple - the inline style always has the higher presedence.</p>
+            </div>
 
+            <style>
+                #id-style {
+                    background-color: rgb(232, 253, 250);
+                    padding: 10px;
+                    border: 2px solid rgb(1, 121, 101);
+                    margin-top: 10px;
+                }
+            </style>
+            <div id="id-style">
+                <h3 style="margin-left: 10px;">Id-Styled Div</h3>
+                <p style="margin-left: 20px;">This box is styled using seperate style id. Id is a unique identifier, so an id should use only once in a html file. For example if we use an id identifier <mark>id="div1-header"</mark> to an element we should not use this id again in the same html file.</p>
+                <p style="margin-left: 20px;">On the contary, class is a non-unique identifier. The same <mark>class="button"</mark> can be used on multiple items within a single document.</p>
+            </div>
+
+            <div style="background-color: rgb(231, 230, 230); padding: 10px; border: 2px solid rgb(138, 138, 138); margin-top: 10px;">
+                <h3 style="margin-left: 10px;">Inline-Styled Div</h3>
+                <p style="margin-left: 20px;">And we always have the inline style option available.</p>
+            </div>
+        </div>
+    
+    <!-- Styling in Divs -->
+        <h2>Layout with Divs (Grid & Columns)</h2>
+    <!-- Using Float -->
+        <div style="height: 22px; background-color:rgb(227, 227, 252); border: 2px solid rgb(1, 1, 151); padding: 5px;">
+            <style>
+                .left {float: left; text-align: center; width: 49.8%; border: 2px solid rgb(165, 165, 252);}
+                .right {float: right; text-align: center; width: 49.8%; border: 2px solid rgb(163, 163, 253);}
+            </style>
+            <div class="left">Left Side</div>
+            <div class="right">Right Side</div>
+        </div>
+        <div style="clear: both;"></div>
+    <!-- Using Flexbox -->
+        <div style="height: auto; background-color:rgb(227, 250, 252); border: 2px solid rgb(1, 95, 133); padding: 5px; margin-top: 10px;">
+            <style>
+                .container {display: flex;}
+                .box {flex: 1; text-align: center; border: 1px solid goldenrod;}
+            </style>
+            <div class="container">
+                <div class="box">Flexbox 1</div>
+                <div class="box">Flexbox 2</div>
+            </div>
+        </div>
+        
         <footer>
             <p style="text-align: right;">&copy; 2025 Abs_Sayem</p>
         </footer>
