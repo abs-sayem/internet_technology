@@ -59,7 +59,7 @@
 * Paragraph: `<p>`
 * Line Break: `<br>`
 * Horizontal Line: `<hr>`
-* Bold: `<strong>`, Italic: `<em>`, Deleted: `<del>`, underlined: `<u>`, Highlighted: `<mark>`
+* Bold: `<strong>`, Italic: `<em>`, Deleted: `<del>`, Underlined: `<u>`, Highlighted: `<mark>`
 
 ```html
 <h1>About Me</h1>
