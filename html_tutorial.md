@@ -331,3 +331,279 @@
 * Redesign a basic webpage using semantic tags for clarity and SEO.
 
 ---
+
+# HTML Divs
+**HTML: Deep Dive into the \*\*\*\* Element (Beginner to Advanced)**
+
+---
+
+## 01: What is a Div?
+
+#### Theory:
+
+* `<div>` stands for "division" and is a block-level container.
+* It’s used to group HTML elements together and apply styles or scripts to them.
+* It does **not** add meaning like semantic tags do.
+
+```html
+<div>
+  <p>This is inside a div</p>
+</div>
+```
+
+#### Variations:
+
+1. Wrap multiple elements:
+
+```html
+<div>
+  <h1>Title</h1>
+  <p>Description</p>
+</div>
+```
+
+2. Nest divs:
+
+```html
+<div>
+  <div>
+    <p>Nested content</p>
+  </div>
+</div>
+```
+
+#### Practice:
+
+* Create a section with two paragraphs and wrap it in a `<div>`.
+
+---
+
+## 02: Styling a&#x20;
+
+#### Theory:
+
+* You can use CSS to style `<div>`: background, padding, margin, border, etc.
+* Divs can be styled using classes or IDs.
+
+```html
+<style>
+  .box {
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid black;
+  }
+</style>
+<div class="box">
+  <p>This box is styled.</p>
+</div>
+```
+
+#### Variations:
+
+1. Use `id` selector:
+
+```html
+<style>
+  #highlight {
+    background-color: yellow;
+  }
+</style>
+<div id="highlight">Important content</div>
+```
+
+2. Add inline styles:
+
+```html
+<div style="border: 1px solid red; padding: 10px;">Inline styled div</div>
+```
+
+#### Practice:
+
+* Create a colored box with border and padding using a class.
+
+---
+
+## 03: Layout with Divs (Grid & Columns)
+
+#### Theory:
+
+* Divs are often used to create multi-column layouts.
+* Use `float`, `flexbox`, or `grid` for layout design.
+
+#### Example using Float:
+
+```html
+<style>
+  .left { float: left; width: 50%; background: #f0f0f0; }
+  .right { float: right; width: 50%; background: #d0d0d0; }
+</style>
+<div class="left">Left Side</div>
+<div class="right">Right Side</div>
+```
+
+#### Example using Flexbox:
+
+```html
+<style>
+  .container {
+    display: flex;
+  }
+  .box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #000;
+  }
+</style>
+<div class="container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+</div>
+```
+
+#### Practice:
+
+* Create a two-column layout using both `float` and `flexbox` methods.
+
+---
+
+## 04: Centering with Div
+
+#### Theory:
+
+* You can center content inside a div or center the div itself.
+
+#### Center text:
+
+```html
+<div style="text-align: center;">
+  <p>Centered Text</p>
+</div>
+```
+
+#### Center div horizontally:
+
+```html
+<div style="width: 200px; margin: 0 auto; background: #ccc;">Centered Box</div>
+```
+
+#### Center using Flexbox:
+
+```html
+<style>
+  .center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+</style>
+<div class="center-box">
+  <div>Perfectly Centered</div>
+</div>
+```
+
+#### Practice:
+
+* Create a div that centers both vertically and horizontally.
+
+---
+
+## 05: Responsive Layouts with Div
+
+#### Theory:
+
+* Combine divs with media queries to make layouts responsive.
+* Use percentage widths or CSS Grid/Flex.
+
+```html
+<style>
+  .responsive {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .item {
+    flex: 1 1 100%;
+  }
+  @media (min-width: 600px) {
+    .item {
+      flex: 1 1 50%;
+    }
+  }
+</style>
+<div class="responsive">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+</div>
+```
+
+#### Practice:
+
+* Build a mobile-first responsive two-column layout.
+
+---
+
+## 06: Advanced Techniques
+
+#### Theory:
+
+* Use CSS Grid with divs for advanced layouts.
+* Animate divs using `@keyframes`.
+
+#### Example: CSS Grid
+
+```html
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .grid-item {
+    background: #eee;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+<div class="grid">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+</div>
+```
+
+#### Example: Animation
+
+```html
+<style>
+  .fade {
+    animation: fadein 2s;
+  }
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
+<div class="fade">Fades in!</div>
+```
+
+#### Practice:
+
+* Create a grid layout and add animation to divs.
+
+---
+
+### Summary
+
+* `<div>` is essential for structuring and styling content.
+* Used in layout, grouping, styling, animation, and responsiveness.
+* Mastery of `<div>` is key to building modern web pages.
+
+---
+
+**Challenge Project:**
+
+* Create a responsive blog layout with:
+
+  * Header, main content, sidebar, and footer
+  * Use flexbox and grid
+  * Apply styling and add animation
