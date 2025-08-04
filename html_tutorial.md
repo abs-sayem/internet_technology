@@ -59,13 +59,13 @@
 * Paragraph: `<p>`
 * Line Break: `<br>`
 * Horizontal Line: `<hr>`
-* Bold: `<strong>`, Italic: `<em>`
+* Bold: `<strong>`, Italic: `<em>`, Deleted: `<del>`, underlined: `<u>`, Highlighted: `<mark>`
 
 ```html
 <h1>About Me</h1>
-<p>My name is Sayem.<br>I am learning web development.</p>
+<p>My name is Learner.<br>I am learning web development.</p>
 <hr>
-<p><strong>Hobbies:</strong> Reading, <em>Coding</em></p>
+<p><strong>Hobbies:</strong> Reading, <em>Coding</em>, <u>Teaching</u>, <mark>Documenting</mark></p>
 ```
 
 #### Variations:
@@ -76,12 +76,15 @@
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
+.
+.
+<h6>Heading 6</h6>
 ```
 
 2. Combine text styles:
 
 ```html
-<p>This is <strong>important</strong> and <em>interesting</em> text.</p>
+<p>This is <strong>important</strong>, <em>interesting</em> <del>and boring</del> text.</p>
 ```
 
 #### Practice:
@@ -333,9 +336,6 @@
 ---
 
 # HTML Divs
-**HTML: Deep Dive into the \*\*\*\* Element (Beginner to Advanced)**
-
----
 
 ## 01: What is a Div?
 
@@ -378,7 +378,7 @@
 
 ---
 
-## 02: Styling a&#x20;
+## 02: Styling a Div;
 
 #### Theory:
 
