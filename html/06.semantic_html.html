@@ -5,7 +5,7 @@
         <title>Semantic <HTML></title>
         <style>body {font-family: 'Trebuchet MS';}</style>
     </head>
-    <body>
+    <body style="background-color: rgb(234, 237, 255); padding: 10px; text-align: jutified;">
         <nav style="display: flex;">
             <a href="01.index.html" style="margin-right: 20px;">Home</a>
             <a href="02.text_format.html" style="margin-right: 20px;">Text Format</a>
@@ -16,12 +16,28 @@
             <a href="07.divs.html" style="margin-right: 20px;">Divs</a>
             <a href="https://github.com/abs-sayem/internet_technology/blob/main/html_tutorial.md" target="_blank" style="margin-left: auto; color: blue;">HTML Tutorial Page</a>
         </nav>
+        
         <header>
             <h1 style="text-align: center;">Semantic HTML</h1>
+            <p style="text-align: center;">Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the content in webpages and web applications rather than merely to define its presentation or look.</p>
             <hr>
-            <p>Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the content in webpages and web applications rather than merely to define its presentation or look.</p>
-            <p>Common Tags: <strong>header</strong>, <strong>footer</strong>, <strong>nav</strong>, <strong>main</strong>, <strong>article</strong>, <strong>section</strong></p>
+
+            <section>
+                <h3>Common Tags:</h3>
+                <ul>
+                    <li><strong>header:</strong> Heading of the whole page.</li>
+                    <li><strong>footer:</strong> Foot note related to the page or author.</li>
+                    <li><strong>nav:</strong> Navigation window to go different section or page.</li>
+                    <li><strong>main:</strong> Main content of the page.</li>
+                    <li><strong>article:</strong> An independent section of content.</li>
+                    <li><strong>section:</strong> A thematic grouping of content, typically with a heading.</li>
+                    <li><strong>aside:</strong> Content related to the main content, like sidebars.</li>
+                    <li><strong>figure:</strong> Self-contained content, like images with captions.</li>
+                    <li><strong>figcaption:</strong> Caption for the figure element.</li>
+                </ul>
+            </section>
         </header>
+        
         <main>
             <section>
                 <article>
@@ -38,6 +54,54 @@
                     <h2>Upcoming World</h2>
                     <p>In future all of us will have gadgets that make our work easier and of higher level. We have capable scientific minds researching and inventing newer methods and devices. They will improve our health, performance and fulfill our desires better. Social living and political conditions are improving drastically.</p>
                 </article>
+                <aside style="background-color: rgb(228, 240, 252);">
+                    <h3>[Note]</h3>
+                    <p>Web designing is a crucial skill in today's digital world. It involves creating visually appealing and user-friendly websites that effectively communicate information. User experience is central to the web designing process. Websites have an array of elements presented in ways that make them easy to navigate.</p>
+                </aside>
+            </section>
+            <section>
+                <table border="2px" cellpadding="3px" cellspacing="0px" style="background-color:rgb(255, 231, 231);">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Heading</th>
+                            <th colspan="1">Students</th>
+                            <th colspan="3">Details</th>
+                        </tr>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>HSC Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4">Student List</td>
+                            <td>CSE01</td>
+                            <td>Victor</td>
+                            <td>Computer Science</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>CCE02</td>
+                            <td>Williams</td>
+                            <td>Computer and Communication</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>EEE03</td>
+                            <td>Harry</td>
+                            <td>Electrical and Electronics</td>
+                            <td>A+</td>
+                        </tr>
+                        <tr>
+                            <td>ETE04</td>
+                            <td>Rick</td>
+                            <td>Electronics and Telecommunication</td>
+                            <td>A+</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
         </main>
         <hr>
