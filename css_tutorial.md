@@ -38,3 +38,41 @@
             color: red;
         }
     ```
+---
+## CSS Selectors:
+### Element Selector:
+- Select all instances of a particular HTML element.
+    ```css
+        p {
+            color: lightblue;
+        }
+    ```
+### Class Selector:
+- Selects elements with a specific class attribute.
+    ```css
+        .container {
+            background-color: silver;
+        }
+    ```
+### ID Selector:
+- Selects a single element with a specific id attribute.
+    ```css
+        #navbar {
+            background-color: pink;
+        }
+    ```
+---
+
+## CSS Typography and CSS Box Model
+<table>
+    <tr>
+        <th>Typography</th>
+        <th>Box Model</th>
+    </tr>
+    <tr>
+        <th>Attributes</th>
+        <th>Example</th>
+        <th>Attributes</th>
+        <th>Example</th>
+    </tr>
+</table>
