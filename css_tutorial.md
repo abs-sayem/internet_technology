@@ -67,12 +67,49 @@
 <table>
     <tr>
         <th>Typography</th>
+        <th></th>
         <th>Box Model</th>
+        <th></th>
     </tr>
     <tr>
         <th>Attributes</th>
         <th>Example</th>
         <th>Attributes</th>
         <th>Example</th>
+    </tr>
+    <tr>
+        <td>
+        - color ==> sets font color<br>
+        - font-seze ==> sets the size of the font<br>
+        - font-weight ==> sets the thickness of the font<br>
+        - font-style ==> sets the font style
+        </td>
+        <td>
+            ```css
+                p {
+                    color: lightblue;
+                    font-size: 18px;
+                    font-weight: 700;
+                    font-style: italic;
+                }
+            ```
+        </td>
+        <td>
+        - content ==> includes the content's height and width<br>
+        - border ==> line that surrounds the content, can have specific - width, style and color<br>
+        - padding ==> space between content and border<br>
+        - margin ==> space between the border of the content and surrounding elements. 
+        </td>
+        <td>
+            ```css
+                .box {
+                    width: 200px;
+                    height: 100px;
+                    border: 2px solid gray;
+                    padding: 20px;
+                    margin: 10px;
+                }
+            ```
+        </td>
     </tr>
 </table>
