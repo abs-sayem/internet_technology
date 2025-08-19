@@ -66,10 +66,10 @@
 ## CSS Typography and CSS Box Model
 ### Typography
 - **Attribures**
-    - color ==> sets font color
-    - font-seze ==> sets the size of the font
-    - font-weight ==> sets the thickness of the font
-    - font-style ==> sets the font style
+    - color --> sets font color
+    - font-seze --> sets the size of the font
+    - font-weight --> sets the thickness of the font
+    - font-style --> sets the font style
 - **Example**
     ```css
         p {
@@ -80,10 +80,10 @@
         }
     ```
 - **Attribures**
-    - content ==> includes the content's height and width<br>
-    - border ==> line that surrounds the content, can have specific - width, style and color<br>
-    - padding ==> space between content and border<br>
-    - margin ==> space between the border of the content and surrounding elements. 
+    - content --> includes the content's height and width<br>
+    - border --> line that surrounds the content, can have specific - width, style and color<br>
+    - padding --> space between content and border<br>
+    - margin --> space between the border of the content and surrounding elements. 
 - **Example**
     ```css
         .box {
@@ -94,3 +94,5 @@
             margin: 10px;
         }
     ```
+
+    
