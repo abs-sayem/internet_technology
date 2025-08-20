@@ -95,4 +95,85 @@
         }
     ```
 
-    
+## CSS Positioning
+- Allows to place elements precisely in desired place.
+- **Properties:** static, relative, absolute, fixed, sticky.
+- The properties offer flexibility for organizing content.
+- For Example,
+    - **`relative`** - moves an element to its normal position
+    - **`absolute`** - places an element based on its closest positioned ancestor.
+
+### `Static` Positioning:
+- The default position behavior of an element. If no position property is diclered, the element considered it as default position: **static**.
+
+### `Relative` Positioning:
+- The element will move relative to its normal/actual position.
+- Allows the use of **top**, **bottom**, **left** and **right** properties for adjustment.
+    ```css
+        .one {
+            background-color: powderblue;
+            position: relative;
+            right: 50px;
+        }
+    ```
+
+### `Absolute` Positioning:
+- The element will move relativele to the nearest positioned (parent) element.
+- If none, it positioned relative to the initial containing block (usually - the <html> element).
+    ```css
+        .one {
+            background-color: powderblue;
+            position: absolute;
+            top: 50px;
+            left: 0px;
+        }
+    ```
+
+### `Fixed` Positioning:
+- The element will be positioned relative to the browser window.
+- Remain fixed even when the page is being scrolled.
+    ```css
+        .navbar {
+            background-color: gray;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            text-align: center;
+        }
+    ```
+
+### `Sticky` Positioning:
+- The element acts like relative positioning until the element reaches a specified point during scrolling, then it become `fixed`.
+    ```css
+        .sticky-navbar {
+            background-color: gray;
+            position: sticky;
+            top: 0px;
+        }
+    ```
+
+### `Z-Index` Positioning:**
+- Z-Index specifies the stack order of an element.
+- Higher z-index valued element is displayed in front of lower valued element.
+    ```css
+        #first {
+            background-color: gray;
+            position: absolute;
+            z-index: -1
+            top: 30px;
+            left: 30px;
+        }
+        #second {
+            background-color: maroon;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        #third {
+            background-color: gray;
+            position: absolute;
+            z-index: -2
+            top: 50px;
+            left: 50px;
+        }
+    ```
