@@ -209,7 +209,7 @@
 
 ---
 
-## 01: HTML & Basic Page Structure
+# 01: HTML & Basic Page Structure
 
 #### Theory:
 * HTML stands for HyperText Markup Language.
