@@ -281,3 +281,99 @@
             width: 200px;
         }
     ```
+---
+
+### Grid
+- Two dimensional layout model; creates grid structures consisting oḟ rows and columns.
+- Excels at creating complex, grid-based layouts, such as those found in magazines, newspaper, and responsive web applications.
+    ```css
+        .container {
+            display: grid;
+        }
+    ```
+
+#### Grid Columns and Rows
+- defines the columns and rows of the grid with a space-separated list of values.
+    ```css
+        .container {
+            display: grid;
+            grid-template-columns: 300px 400px 500px;
+            grid-template-columns: 1fr 1fr 1fr; /* Each element will take the same width */
+            grid-template-columns: repeat(3, 1fr); /* Same as last */
+            grid-template-rows: 100px 1fr max-content;
+            grid-template-rows: min-content 1fr min-content;
+        }
+    ```
+
+#### Repeat
+- if the definition contains repeating parts, it can be done using the **repeat()** natation to stramline things.
+    ```css
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+        }
+    ```
+
+#### Grid Example
+- In index.html:
+    ```html
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <title>CSS Grid Document</title>
+                <link rel="stylesheet" href="style.css" />
+            </head>
+            <body>
+                <div class="parent">
+                    <div class="child">
+                        <p>Grid is a two-dimensional layout model, primarily designed for arranging elements in a rows and columns.</p>
+                    </div>
+                    <div class="child">
+                        <p>
+                            Grid is a two-dimensional layout model, primarily designed for arranging elements in a rows and columns.
+                        </p>
+                    </div>
+                    <div class="child">
+                        <p>Grid is a two-dimensional layout model, primarily designed for 
+                            arranging elements in a rows and columns.</p>
+                    </div>
+                    <div class="child">
+                        <p>
+                            Grid is a two-dimensional layout model, primarily designed for 
+                            arranging elements in a rows and columns.
+                        </p>
+                    </div>
+                    <div class="child">
+                        <p>
+                            Grid is a two-dimensional layout model, primarily designed for 
+                            arranging elements in a rows and columns.
+                        </p>
+                    </div>
+                    <div class="child">
+                        <p>
+                            Grid is a two-dimensional layout model, primarily designed for 
+                            arranging elements in a rows and columns.
+                        </p>
+                    </div>
+                </div>
+            </head>
+        </html>
+    ```
+- In style.css: 
+    ```css
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            padding: 20px;
+            height: 400px;
+            background-color: tan;
+        }
+        .child {
+            border: 2px solid gray;
+            padding: 10px;
+            font-size: 16px;
+            width: auto;
+        }
+    ```
