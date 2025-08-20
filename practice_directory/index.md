@@ -1,12 +1,12 @@
-#### Basic Structure
-    ```html
-        <!DOCTYPE html>
-        <html>
-            <head></head>
-            <body></body>
-        </html>
-    ```
-- define language
+#### HTML Basic Structure
+```html
+    <!DOCTYPE html>
+    <html>
+        <head></head>
+        <body></body>
+    </html>
+```
+- define language: lang
     ```html
         <!DOCTYPE html>
         <html lang="en">
