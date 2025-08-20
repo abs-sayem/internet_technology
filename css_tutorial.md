@@ -177,3 +177,107 @@
             left: 50px;
         }
     ```
+
+## CSS Flexbox and Grid
+### FlexBox
+- One dimensional layout model, designed for arranging elements in a row or in a column.
+- Simplifly the complex layout. **How?** - Elements can dynamically adjust their size and position within a container, depending on the available space.
+
+#### Display Flex:
+- defines a flex container; enables a flex context for all its direct children.
+    ```css
+        .container {
+            display: flex;
+        }
+    ```
+
+#### Flex Direction:
+- defines the direction of the flex items, places in the flex container.
+    ```css
+        .container {
+            display: flex;
+            flex-direction: row | row-reverse | column | column-reverse;
+        }
+    ```
+
+#### Justify Content:
+- distributes extra free space left over when all the flex items on a line are inflexible or flexible but have reached their maximum size.
+    ```css
+        .container {
+            display: flex;
+            justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+        }
+    ```
+
+#### Align Items:
+- defines the default behavior for how flex items are laid out along the cross-axis on the current line.
+    ```css
+        .container {
+            display: flex;
+            align-items: stretch | flex-start | flex-end | center | baseline;
+        }
+    ```
+
+#### Gap:
+- gap controls the space between flex items.
+    ```css
+        .container {
+            display: flex;
+            gap: 10px;
+            gap: 10px 20px; /*row-gap column-gap*/
+            row-gap: 10px;
+            column-gap: 20px;
+        }
+    ```
+
+#### **Flexbox Example**
+- In index.html:
+    ```html
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <title>CSS Flex Document</title>
+                <link rel="stylesheet" href="style.css" />
+            </head>
+            <body>
+                <div class="parent">
+                    <div class="child">
+                        <p>Flexbox is a one-dimensional layout model, primarily designed for arranging elements in a row or in a column.</p>
+                    </div>
+                    <div class="child">
+                        <p>
+                            Flexbox is a one-dimensional layout model, primarily designed for arranging elements in a row or in a column.
+                        </p>
+                    </div>
+                    <div class="child">
+                        <p>Flexbox is a one-dimensional layout model, primarily designed for 
+                            arranging elements in a row or in a column.</p>
+                    </div>
+                    <div class="child">
+                        <p>
+                            Flexbox is a one-dimensional layout model, primarily designed for 
+                            arranging elements in a row or in a column.
+                        </p>
+                    </div>
+                </div>
+            </body>
+        </html>
+    ```
+- In style.css: 
+    ```css
+        .parent {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            padding: 10px;
+            height: 600px;
+            background-color: tan;
+            align-items: center;
+            justify-content: center;
+        }
+        .child {
+            border: 2px solid gray;
+            padding: 10px;
+            width: 200px;
+        }
+    ```
