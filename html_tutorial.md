@@ -1,9 +1,9 @@
 # **HTML (Structure & Semantics)**
 
 ## 1. HTML Basics Strunture
-* **`<!DOCTYPE html>`** → Declares the document type (HTML5).
+### `<!DOCTYPE html>` → Declares the document type (HTML5).
 
-* **`<html>`** → Root element of the HTML document.
+### `<html>` → Root element of the HTML document.
   ```html
   <!DOCTYPE html>
   <html>
@@ -12,7 +12,12 @@
   </html>
   ```
 
-* **`<head>`** → Contains metadata (title, meta info, links, scripts, styles).
+### `<head>` → Contains metadata (title, meta info, links, scripts, styles).
+* **`<title>`** → Page title (browser tab).
+* **`<meta>`** → Metadata (charset, description, viewport).
+* **`<link>`** → Link to external resources (CSS, favicon).
+* **`<style>`** → Internal CSS.
+* **`<script>`** → JavaScript code.
   ```html
   <!DOCTYPE html>
   <html>
@@ -28,7 +33,7 @@
   </html>
   ```
 
-* **`<body>`** → Contains visible page content.
+### `<body>` → Contains visible page content.
 ---
 #### Elements & Attributes:
 * **Element** → Defined by start `<tag>` and end `</tag>`.<br>
@@ -79,38 +84,17 @@
     </body>
   </html>
   ```
----
 
 ---
 
-## 6. Links
+#### Links and Images
 * **`<a>`** → Creates a hyperlink.
-  ```html
-  <a href="https://example.com" target="_blank">Visit Example</a>
-  ```
-
----
-
-## 7. Head (Extra Tags)
-* **`<title>`** → Page title (browser tab).
-* **`<meta>`** → Metadata (charset, description, viewport).
-* **`<link>`** → Link to external resources (CSS, favicon).
-* **`<style>`** → Internal CSS.
-* **`<script>`** → JavaScript code.
-  ```html
-  <head>
-    <title>My Site</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  ```
-
----
-
-## 8. Images
 * **`<img>`** → Embeds an image.
   ```html
-  <img src="image.jpg" alt="A sample image" width="200">
+  <a href="https://example.com">Visit Example</a>
+  <a href="https://example.com" target="_blank">Visit Example</a>   <!-- Opens in new tab -->
+
+  <img src="image.jpg" alt="descript_image" width=100% height="400px">
   ```
 
 ---
@@ -122,11 +106,59 @@
 * **`<td>`** → Table data cell.
   ```html
   <table border="1">
-    <tr><th>Name</th><th>Age</th></tr>
-    <tr><td>Alice</td><td>22</td></tr>
+    <tr><th>Std Id</th><th>Attance</th><th>Mid</th><th>Final</th></tr>
+    <tr><td>CCE001</td><td>10</td><td>24</td><td>40</td></tr>
+    <tr><td>CCE002</td><td>10</td><td>25</td><td>44</td></tr>
+    <tr><td>CCE003</td><td>8</td><td>20</td><td>48</td></tr>
+    <tr><td>CCE004</td><td>10</td><td>30</td><td>38</td></tr>
+    <tr><td>CCE005</td><td>7</td><td>20</td><td>50</td></tr>
   </table>
   ```
-
+* **`colspan`** → Merge table colums.
+* **`rowspan`** → Merge table rows.
+  ```html
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr><th colspan="10">Web Programming Lab Records</th></tr>
+            <tr>
+                <th rowspan="2">Std Id</th>
+                <th colspan="2">Lab-01</th>
+                <th colspan="2">Lab-02</th>
+                <th colspan="2">Lab-03</th>
+                <th colspan="2">Total</th>
+                <th rowspan="2">Final<br>(attendacne % marks)</th>
+            </tr>
+            <tr>
+                <th>Attend</th><th>Marks</th>
+                <th>Attend</th><th>Marks</th>
+                <th>Attend</th><th>Marks</th>
+                <th>Attend</th><th>Marks</th>
+            </tr>
+            <tr>
+                <td>CCE001</td>
+                <td>Y</td><td>10</td>
+                <td>Y</td><td>10</td>
+                <td>Y</td><td>10</td>
+                <td>3</td><td>30</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>CCE002</td>
+                <td>Y</td><td>10</td>
+                <td>N</td><td>00</td>
+                <td>Y</td><td>10</td>
+                <td>2</td><td>20</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>CCE003</td>
+                <td>Y</td><td>00</td>
+                <td>N</td><td>00</td>
+                <td>Y</td><td>10</td>
+                <td>2</td><td>10</td>
+                <td>4</td>
+            </tr>
+        </table>
+  ```
 ---
 
 ## 10. Lists
@@ -209,134 +241,8 @@
 
 ---
 
+
 # 01: HTML & Basic Page Structure
-
-#### Theory:
-* HTML stands for HyperText Markup Language.
-* It structures content for the web using elements (tags).
-* Basic structure:
-
-  ```html
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>My First Webpage</title>
-    </head>
-    <body>
-      <h1>Hello, World!</h1>
-    </body>
-  </html>
-  ```
-
-#### Variations:
-
-1. Add a paragraph and image:
-
-  ```html
-  <body>
-    <h1>Hello, World!</h1>
-    <p>This is my first web page.</p>
-    <img src="logo.png" alt="Logo">
-  </body>
-  ```
-
-2. Add meta tag and styles:
-
-  ```html
-  <head>
-    <meta charset="UTF-8">
-    <title>Styled Page</title>
-    <style>body { font-family: Arial; }</style>
-  </head>
-  ```
-
-#### Practice:
-
-* Create a file `index.html`
-* Add the above structure and open in a browser.
-
----
-
-## 02: Text Formatting
-
-#### Theory:
-
-* Headings: `<h1>` to `<h6>`
-* Paragraph: `<p>`
-* Line Break: `<br>`
-* Horizontal Line: `<hr>`
-* Bold: `<strong>`, Italic: `<em>`, Deleted: `<del>`, Underlined: `<u>`, Highlighted: `<mark>`
-
-  ```html
-  <h1>About Me</h1>
-  <p>My name is Learner.<br>I am learning web development.</p>
-  <hr>
-  <p><strong>Hobbies:</strong> Reading, <em>Coding</em>, <u>Teaching</u>, <mark>Documenting</mark></p>
-  ```
-
-#### Variations:
-
-1. Use all heading levels:
-
-  ```html
-  <h1>Heading 1</h1>
-  <h2>Heading 2</h2>
-  <h3>Heading 3</h3>
-  .
-  .
-  <h6>Heading 6</h6>
-  ```
-
-2. Combine text styles:
-
-  ```html
-  <p>This is <strong>important</strong>, <em>interesting</em> <del>and boring</del> text.</p>
-  ```
-
-#### Practice:
-
-* Create an “About Me” section using formatting tags.
-
----
-
-## 03: Links and Images
-
-#### Theory:
-
-* Links: `<a href="URL">Text</a>`
-* Images: `<img src="path" alt="description">`
-
-  ```html
-  <a href="https://www.google.com">Visit Google</a>
-  <img src="me.jpg" alt="My Photo" width="200">
-  ```
-
-#### Variations:
-
-1. Open link in new tab:
-
-  ```html
-  <a href="https://example.com" target="_blank">External Site</a>
-  ```
-
-2. Link to another page in the project:
-
-  ```html
-  <a href="about.html">About Us</a>
-  ```
-
-3. Add image with height and border:
-
-  ```html
-  <img src="image.jpg" alt="Sample" height="150" style="border: 1px solid black;">
-  ```
-
-#### Practice:
-
-* Link to external and internal pages.
-* Add at least two images with alt text.
-
----
 
 ## 04: Lists
 
