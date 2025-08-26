@@ -30,87 +30,56 @@
 
 * **`<body>`** → Contains visible page content.
 ---
-> #### Elements & Attributes:
-  > **Element** → Defined by start `<tag>` and end `</tag>`.<br>
-  > **Attribute** → Provides extra info inside the opening tag.<br>
-    <p title="Tooltip text">This is a paragraph with an attribute.</p>
-
+#### Elements & Attributes:
+* **Element** → Defined by start `<tag>` and end `</tag>`.<br>
+* **Attribute** → Provides extra info inside the opening tag.<br>
+```html
+  <p title="Tooltip text">This is a paragraph with an attribute.</p>
+```
 ---
-  * **`<h1>`–`<h6>`** → Define headings (h1 = largest, h6 = smallest).
-  * **`<p>`** → Defines a paragraph.
+
+* **`<h1>`–`<h6>`** → Define headings (h1 = largest, h6 = smallest).
+* **`<p>`** → Defines a paragraph.
+* **`<article>`** → Defines independent piece of content. Can contain - headings, paragraph, ...
   ```html
   <!DOCTYPE html>
   <html>
     <head></head>
     <body>
-      <h>
-      <p>Hello World</p>
+      <h1>Internet Technology</h1>
+      <p>This is the paragraph that represents a block of text. Can not contain any other elements.</p>
+      <article>
+        <h2>Article</h2>
+        <p>Article used for things like - blog posts, new articles, or any block of content that can stand alone.</p>
+        <p>Article indicates this chunk is a meaningful and complete content.</p>
+      </article>
     </body>
   </html>
   ```
-  ```html
-  <body><p>Hello World</p></body>
-  ```
-
----
-
-## 2. Elements & Attributes
-* **Element** → Defined by start `<tag>` and end `</tag>`.
-* **Attribute** → Provides extra info inside the opening tag.
-  ```html
-  <p title="Tooltip text">This is a paragraph with an attribute.</p>
-  ```
-
----
-
-## 3. Headings
-
-* **`<h1>`–`<h6>`** → Define headings (h1 = largest, h6 = smallest).
-  ```html
-  <h1>Main Title</h1>
-  <h3>Sub Heading</h3>
-  ```
-
----
-
-## 4. Paragraphs
-* **`<p>`** → Defines a paragraph.
-  ```html
-  <p>This is a paragraph.</p>
-  ```
-
+#### Formatting
+* **`<b>` / `<strong>`** → Bold text (strong = important).
+* **`<i>` / `<em>`** → Italic text (em = emphasized).
+* **`<u>`** → Underlined text.
+* **`<mark>`** → Highlighted text.
+* **`<del>`** → Deleted text.
 * **`<br>`** → Line break.
-  ```html
-  Hello<br>World
-  ```
-
 * **`<hr>`** → Horizontal line (divider).
   ```html
-  <hr>
+  <!DOCTYPE html>
+  <html>
+    <head></head>
+    <body>
+      <h1><mark>Internet Technology</mark></h1>
+      <p>This is the paragraph that represents a block of text.<br><del>Can contain</del> Can not contain any other elements.</p>
+      <article>
+        <h2><u>Article</u></h2>
+        <p>Article used for things like - <b>blog posts</b>, <strong>new articles</strong>, or any block of content that can stand alone.</p>
+        <p>Article indicates this chunk is a <i>meaningful</i> and <em>complete</em> content.</p>
+      </article><hr>
+    </body>
+  </html>
   ```
-
 ---
-
-## 5. Formatting
-* **`<b>` / `<strong>`** → Bold text (strong = important).
-  ```html
-  <strong>Important text</strong>
-  ```
-
-* **`<i>` / `<em>`** → Italic text (em = emphasized).
-  ```html
-  <em>Highlighted text</em>
-  ```
-
-* **`<u>`** → Underlined text.
-  ```html
-  <u>Underlined</u>
-  ```
-
-* **`<mark>`** → Highlighted text.
-  ```html
-  <mark>Highlighted</mark>
-  ```
 
 ---
 
