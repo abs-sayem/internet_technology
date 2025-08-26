@@ -1,22 +1,54 @@
 # **HTML (Structure & Semantics)**
 
-## 1. HTML Basics
+## 1. HTML Basics Strunture
 * **`<!DOCTYPE html>`** → Declares the document type (HTML5).
-  ```html
-  <!DOCTYPE html>
-  ```
 
 * **`<html>`** → Root element of the HTML document.
   ```html
-  <html> ... </html>
+  <!DOCTYPE html>
+  <html>
+    <head></head>
+    <body></body>
+  </html>
   ```
 
-* **`<head>`** → Contains metadata (title, links, scripts, styles).
+* **`<head>`** → Contains metadata (title, meta info, links, scripts, styles).
   ```html
-  <head><title>My Page</title></head>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>My Page</title>
+      <meta charset="UTF-8">
+      <meta font-family="Trebuchet MS">
+      <style>body {color: silver}</style>   <!-- color: rgb(253, 235, 233) -->
+      <link rel="stylesheet" href="style.css" />
+      <link rel="script" href="script.js" />
+    </head>
+    <body></body>
+  </html>
   ```
 
 * **`<body>`** → Contains visible page content.
+---
+> #### Elements & Attributes:
+  > **Element** → Defined by start `<tag>` and end `</tag>`.
+  > **Attribute** → Provides extra info inside the opening tag.
+    ```html
+      <p title="Tooltip text">This is a paragraph with an attribute.</p>
+    ```
+---
+  * **`<h1>`–`<h6>`** → Define headings (h1 = largest, h6 = smallest).
+  * **`<p>`** → Defines a paragraph.
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head></head>
+    <body>
+      <h>
+      <p>Hello World</p>
+    </body>
+  </html>
+  ```
   ```html
   <body><p>Hello World</p></body>
   ```

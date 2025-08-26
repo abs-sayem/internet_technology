@@ -7,7 +7,7 @@
 
 ### My Project Structure (No Sub-Directory)
 ```pgsql
-    internet_technology/
+    project/
         index.html
         app.py
 ```
