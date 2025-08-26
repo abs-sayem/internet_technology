@@ -31,11 +31,10 @@
 * **`<body>`** → Contains visible page content.
 ---
 > #### Elements & Attributes:
-  > **Element** → Defined by start `<tag>` and end `</tag>`.
-  > **Attribute** → Provides extra info inside the opening tag.
-    ```html
-      <p title="Tooltip text">This is a paragraph with an attribute.</p>
-    ```
+  > **Element** → Defined by start `<tag>` and end `</tag>`.<br>
+  > **Attribute** → Provides extra info inside the opening tag.<br>
+    <p title="Tooltip text">This is a paragraph with an attribute.</p>
+
 ---
   * **`<h1>`–`<h6>`** → Define headings (h1 = largest, h6 = smallest).
   * **`<p>`** → Defines a paragraph.
